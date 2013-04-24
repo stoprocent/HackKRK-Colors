@@ -40,18 +40,11 @@
     [rectanglePath fill];
     
     // Rectangle
-    NSColor* color2 = [NSColor colorWithCalibratedRed:self.color.redComponent*0.85
-                                                green:self.color.greenComponent*0.85
-                                                 blue:self.color.blueComponent*0.85
+    NSColor* color2 = [NSColor colorWithCalibratedRed:self.color.redComponent*0.66
+                                                green:self.color.greenComponent*0.66
+                                                 blue:self.color.blueComponent*0.66
                                                 alpha:0.6];
-//    NSColor* color2 = [NSColor colorWithCalibratedHue:self.color.hueComponent*2
-//                                           saturation:self.color.saturationComponent
-//                                           brightness:self.color.brightnessComponent*1.5
-//                                                alpha:0.6];
-    color2 = [NSColor colorWithCalibratedRed:color2.redComponent*0.8
-                                       green:color2.greenComponent*0.8
-                                        blue:color2.blueComponent*0.8
-                                       alpha:color2.alphaComponent];
+
     NSBezierPath* rectangle2Path = [NSBezierPath bezierPathWithRect:NSMakeRect(15, 6, 18, 52)];
     [color2 setFill];
     [rectangle2Path fill];
