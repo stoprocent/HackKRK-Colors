@@ -12,4 +12,6 @@
 
 - (id)initWithFrame:(NSRect)frameRect color:(NSColor *)color;
 
+- (NSImage *)imageRepresentation;
+
 @end
