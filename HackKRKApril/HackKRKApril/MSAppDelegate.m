@@ -8,6 +8,7 @@
 
 #import "MSAppDelegate.h"
 #import "MSCanvasRequest.h"
+#import "BaseLogoView.h"
 
 @interface MSAppDelegate () <MSCanvasRequestDelegate>
 
@@ -30,7 +31,12 @@
                         serverId:(int)serverId
 {
     NSLog(@"Color :%@, Size: %@, Server ID: %d", color, NSStringFromSize(size), serverId);
-    self.window.backgroundColor = color;
+    
+    BaseLogoView *baseLogoView = [[BaseLogoView alloc] initWithFrame:CGRectMake(0, 0, 64, 64)
+                                                               color:color];
+    [self.window.contentView addSubview:baseLogoView];
+    
+    self.window.backgroundColor = [NSColor clearColor];
 }
 
 @end
