@@ -30,6 +30,11 @@
     [self.color setFill];
     [backgroundPath fill];
     
+    NSColor *strokeColor = [NSColor colorWithCalibratedRed:self.color.redComponent*1.3
+                                                     green:self.color.greenComponent*1.3
+                                                      blue:self.color.blueComponent*1.3
+                                                     alpha:1.0];
+    
     // Square
     NSColor* color1 = [NSColor colorWithCalibratedRed:self.color.redComponent*1.15
                                                  green:self.color.greenComponent*1.15
@@ -37,7 +42,9 @@
                                                  alpha:1.0];
     NSBezierPath* rectanglePath = [NSBezierPath bezierPathWithRect:NSMakeRect(15, 6, 35, 35)];
     [color1 setFill];
+//    [strokeColor setStroke];
     [rectanglePath fill];
+//    [rectanglePath stroke];
     
     // Rectangle
     NSColor* color2 = [NSColor colorWithCalibratedRed:self.color.redComponent*0.66
@@ -47,7 +54,26 @@
 
     NSBezierPath* rectangle2Path = [NSBezierPath bezierPathWithRect:NSMakeRect(15, 6, 18, 52)];
     [color2 setFill];
+    [color1 setStroke];
     [rectangle2Path fill];
+    [rectangle2Path stroke];
+
+    NSBezierPath* border = [NSBezierPath bezierPath];
+    [border moveToPoint:NSMakePoint(15, 6)];
+    [border lineToPoint:NSMakePoint(15, 58)];
+    [border lineToPoint:NSMakePoint(33, 58)];
+    [border lineToPoint:NSMakePoint(33, 41)];
+    [border lineToPoint:NSMakePoint(15, 41)];
+    [border lineToPoint:NSMakePoint(33, 41)];
+    [border lineToPoint:NSMakePoint(33, 6)];
+    [border lineToPoint:NSMakePoint(33, 41)];
+    [border lineToPoint:NSMakePoint(50, 41)];
+    [border lineToPoint:NSMakePoint(50, 6)];
+    [border lineToPoint:NSMakePoint(15, 6)];
+    [border closePath];
+    
+    [strokeColor setStroke];
+    [border stroke];
 }
 
 - (NSImage *)imageRepresentation

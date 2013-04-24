@@ -8,7 +8,7 @@
 
 static NSString *kApiTokenKey   = @"api_token";
 static NSString *kApiImageKey   = @"image";
-static NSString *kApiToken      = @"synergize sexy action-items";
+static NSString *kApiToken      = @"synthesize seamless initiatives";
 static NSString *kApiBaseUrl    = @"http://canvas.hackkrk.com/api/";
 
 #import "MSCanvasRequest.h"

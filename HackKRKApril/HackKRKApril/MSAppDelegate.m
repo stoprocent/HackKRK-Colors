@@ -20,6 +20,11 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    BaseLogoView *baseLogoView = [[BaseLogoView alloc] initWithFrame:CGRectMake(0, 0, 64, 64)
+                                                               color:[NSColor colorWithCalibratedRed:1.0 green:0.5 blue:0.0 alpha:1.0]];
+    [self.window.contentView addSubview:baseLogoView];
+    self.window.backgroundColor = [NSColor clearColor];
+
     // Insert code here to initialize your application
     self.request = [[MSCanvasRequest alloc] init];
     
