@@ -88,7 +88,8 @@ static NSString *kApiBaseUrl    = @"http://canvas.hackkrk.com/api/";
 - (NSData *) PNGRepresentationOfImage:(NSImage *) image
 {
     [image lockFocus];
-    NSBitmapImageRep *bitmapRep = [[NSBitmapImageRep alloc] initWithFocusedViewRect:NSMakeRect(0, 0, image.size.width, image.size.height)];
+    CGFloat scale = [[NSScreen mainScreen] backingScaleFactor];
+    NSBitmapImageRep *bitmapRep = [[NSBitmapImageRep alloc] initWithFocusedViewRect:NSMakeRect(0, 0, image.size.width/scale, image.size.height/scale)];
     [image unlockFocus];
     return [bitmapRep representationUsingType:NSPNGFileType properties:Nil];
 }
