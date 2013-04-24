@@ -28,6 +28,11 @@
     [self.request getNewChallenge];
 }
 
+- (void)postedImageSuccess
+{
+    [self.request getNewChallenge];
+}
+
 - (void)gotNewChallengeWithColor:(NSColor *)color
                             size:(CGSize)size
                         serverId:(int)serverId

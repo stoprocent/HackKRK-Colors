@@ -14,6 +14,8 @@
                             size:(CGSize)size
                         serverId:(int)serverId;
 
+- (void)postedImageSuccess;
+
 @end
 
 @interface MSCanvasRequest : NSObject

@@ -75,6 +75,7 @@ static NSString *kApiBaseUrl    = @"http://canvas.hackkrk.com/api/";
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         
+        [self.delegate postedImageSuccess];
         NSLog(@"%@", responseObject);
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

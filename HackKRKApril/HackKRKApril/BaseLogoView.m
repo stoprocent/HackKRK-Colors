@@ -31,9 +31,9 @@
     [backgroundPath fill];
     
     // Square
-    NSColor* color1 = [NSColor colorWithCalibratedRed:self.color.redComponent*1.2
-                                                 green:self.color.greenComponent*1.2
-                                                  blue:self.color.blueComponent*1.2
+    NSColor* color1 = [NSColor colorWithCalibratedRed:self.color.redComponent*1.15
+                                                 green:self.color.greenComponent*1.15
+                                                  blue:self.color.blueComponent*1.15
                                                  alpha:1.0];
     NSBezierPath* rectanglePath = [NSBezierPath bezierPathWithRect:NSMakeRect(15, 6, 35, 35)];
     [color1 setFill];
