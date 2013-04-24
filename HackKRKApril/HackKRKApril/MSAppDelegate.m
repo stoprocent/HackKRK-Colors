@@ -7,12 +7,15 @@
 //
 
 #import "MSAppDelegate.h"
+#import "MSCanvasRequest.h"
 
 @implementation MSAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    MSCanvasRequest *request = [[MSCanvasRequest alloc] init];
+    [request getNewChallenge];
 }
 
 @end
