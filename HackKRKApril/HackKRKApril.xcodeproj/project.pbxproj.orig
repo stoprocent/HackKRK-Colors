@@ -17,8 +17,11 @@
 		0DB11CE817284C85001B23F3 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB11CDD17284C85001B23F3 /* AFURLConnectionOperation.m */; };
 		0DB11CE917284C85001B23F3 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB11CDF17284C85001B23F3 /* AFXMLRequestOperation.m */; };
 		0DB11CEA17284C85001B23F3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB11CE117284C85001B23F3 /* UIImageView+AFNetworking.m */; };
+<<<<<<< HEAD
 		371FBB2817285F3D00BF331C /* BaseLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 371FBB2717285F3D00BF331C /* BaseLogoView.m */; };
+=======
 		0DB11CEE17286294001B23F3 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DB11CED17286294001B23F3 /* Base64.m */; };
+>>>>>>> Upload
 		90D70DCC1728481E00D7468E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70DCB1728481E00D7468E /* Cocoa.framework */; };
 		90D70DD61728481E00D7468E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90D70DD41728481E00D7468E /* InfoPlist.strings */; };
 		90D70DD81728481E00D7468E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D70DD71728481E00D7468E /* main.m */; };
@@ -49,10 +52,13 @@
 		0DB11CDF17284C85001B23F3 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		0DB11CE017284C85001B23F3 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		0DB11CE117284C85001B23F3 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		371FBB2617285F3D00BF331C /* BaseLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLogoView.h; sourceTree = "<group>"; };
 		371FBB2717285F3D00BF331C /* BaseLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseLogoView.m; sourceTree = "<group>"; };
+=======
 		0DB11CEC17286294001B23F3 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
 		0DB11CED17286294001B23F3 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+>>>>>>> Upload
 		90D70DC81728481E00D7468E /* HackKRKApril.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackKRKApril.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D70DCB1728481E00D7468E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		90D70DCE1728481E00D7468E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -266,8 +272,11 @@
 				0DB11CE817284C85001B23F3 /* AFURLConnectionOperation.m in Sources */,
 				0DB11CE917284C85001B23F3 /* AFXMLRequestOperation.m in Sources */,
 				0DB11CEA17284C85001B23F3 /* UIImageView+AFNetworking.m in Sources */,
+<<<<<<< HEAD
 				371FBB2817285F3D00BF331C /* BaseLogoView.m in Sources */,
+=======
 				0DB11CEE17286294001B23F3 /* Base64.m in Sources */,
+>>>>>>> Upload
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
