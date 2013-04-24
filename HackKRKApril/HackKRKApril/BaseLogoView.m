@@ -36,9 +36,9 @@
                                                      alpha:1.0];
     
     // Square
-    NSColor* color1 = [NSColor colorWithCalibratedRed:self.color.redComponent*1.15
-                                                 green:self.color.greenComponent*1.15
-                                                  blue:self.color.blueComponent*1.15
+    NSColor* color1 = [NSColor colorWithCalibratedRed:self.color.redComponent*0.9
+                                                 green:self.color.greenComponent*0.9
+                                                  blue:self.color.blueComponent*0.9
                                                  alpha:1.0];
     NSBezierPath* rectanglePath = [NSBezierPath bezierPathWithRect:NSMakeRect(15, 6, 35, 35)];
     [color1 setFill];
@@ -47,9 +47,9 @@
 //    [rectanglePath stroke];
     
     // Rectangle
-    NSColor* color2 = [NSColor colorWithCalibratedRed:self.color.redComponent*0.66
-                                                green:self.color.greenComponent*0.66
-                                                 blue:self.color.blueComponent*0.66
+    NSColor* color2 = [NSColor colorWithCalibratedRed:self.color.redComponent*0.50
+                                                green:self.color.greenComponent*0.50
+                                                 blue:self.color.blueComponent*0.50
                                                 alpha:0.6];
 
     NSBezierPath* rectangle2Path = [NSBezierPath bezierPathWithRect:NSMakeRect(15, 6, 18, 52)];
@@ -72,6 +72,7 @@
     [border lineToPoint:NSMakePoint(15, 6)];
     [border closePath];
     
+    [border setLineWidth:1.0f];
     [strokeColor setStroke];
     [border stroke];
 }
