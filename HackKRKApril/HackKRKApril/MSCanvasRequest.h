@@ -8,7 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol MSCanvasRequestDelegate <NSObject>
+
+- (void)gotNewChallengeWithColor:(NSColor*)color
+                            size:(CGSize)size
+                        serverId:(int)serverId;
+
+@end
+
 @interface MSCanvasRequest : NSObject
+
+@property (nonatomic, assign) id <MSCanvasRequestDelegate>delegate;
 
 - (void)getNewChallenge;
 
