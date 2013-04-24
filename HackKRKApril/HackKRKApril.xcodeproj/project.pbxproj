@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90D70DCC1728481E00D7468E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D70DCB1728481E00D7468E /* Cocoa.framework */; };
+		90D70DD61728481E00D7468E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90D70DD41728481E00D7468E /* InfoPlist.strings */; };
+		90D70DD81728481E00D7468E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D70DD71728481E00D7468E /* main.m */; };
+		90D70DDC1728481E00D7468E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 90D70DDA1728481E00D7468E /* Credits.rtf */; };
+		90D70DDF1728481E00D7468E /* MSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D70DDE1728481E00D7468E /* MSAppDelegate.m */; };
+		90D70DE21728481E00D7468E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90D70DE01728481E00D7468E /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		90D70DC81728481E00D7468E /* HackKRKApril.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackKRKApril.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90D70DCB1728481E00D7468E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		90D70DCE1728481E00D7468E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		90D70DCF1728481E00D7468E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		90D70DD01728481E00D7468E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		90D70DD31728481E00D7468E /* HackKRKApril-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HackKRKApril-Info.plist"; sourceTree = "<group>"; };
+		90D70DD51728481E00D7468E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		90D70DD71728481E00D7468E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90D70DD91728481E00D7468E /* HackKRKApril-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackKRKApril-Prefix.pch"; sourceTree = "<group>"; };
+		90D70DDB1728481E00D7468E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		90D70DDD1728481E00D7468E /* MSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAppDelegate.h; sourceTree = "<group>"; };
+		90D70DDE1728481E00D7468E /* MSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAppDelegate.m; sourceTree = "<group>"; };
+		90D70DE11728481E00D7468E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90D70DC51728481E00D7468E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D70DCC1728481E00D7468E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90D70DBF1728481E00D7468E = {
+			isa = PBXGroup;
+			children = (
+				90D70DD11728481E00D7468E /* HackKRKApril */,
+				90D70DCA1728481E00D7468E /* Frameworks */,
+				90D70DC91728481E00D7468E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90D70DC91728481E00D7468E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90D70DC81728481E00D7468E /* HackKRKApril.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90D70DCA1728481E00D7468E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90D70DCB1728481E00D7468E /* Cocoa.framework */,
+				90D70DCD1728481E00D7468E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90D70DCD1728481E00D7468E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90D70DCE1728481E00D7468E /* AppKit.framework */,
+				90D70DCF1728481E00D7468E /* CoreData.framework */,
+				90D70DD01728481E00D7468E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		90D70DD11728481E00D7468E /* HackKRKApril */ = {
+			isa = PBXGroup;
+			children = (
+				90D70DDD1728481E00D7468E /* MSAppDelegate.h */,
+				90D70DDE1728481E00D7468E /* MSAppDelegate.m */,
+				90D70DE01728481E00D7468E /* MainMenu.xib */,
+				90D70DD21728481E00D7468E /* Supporting Files */,
+			);
+			path = HackKRKApril;
+			sourceTree = "<group>";
+		};
+		90D70DD21728481E00D7468E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90D70DD31728481E00D7468E /* HackKRKApril-Info.plist */,
+				90D70DD41728481E00D7468E /* InfoPlist.strings */,
+				90D70DD71728481E00D7468E /* main.m */,
+				90D70DD91728481E00D7468E /* HackKRKApril-Prefix.pch */,
+				90D70DDA1728481E00D7468E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90D70DC71728481E00D7468E /* HackKRKApril */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90D70DE51728481E00D7468E /* Build configuration list for PBXNativeTarget "HackKRKApril" */;
+			buildPhases = (
+				90D70DC41728481E00D7468E /* Sources */,
+				90D70DC51728481E00D7468E /* Frameworks */,
+				90D70DC61728481E00D7468E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackKRKApril;
+			productName = HackKRKApril;
+			productReference = 90D70DC81728481E00D7468E /* HackKRKApril.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90D70DC01728481E00D7468E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = MS;
+			};
+			buildConfigurationList = 90D70DC31728481E00D7468E /* Build configuration list for PBXProject "HackKRKApril" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 90D70DBF1728481E00D7468E;
+			productRefGroup = 90D70DC91728481E00D7468E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90D70DC71728481E00D7468E /* HackKRKApril */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90D70DC61728481E00D7468E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D70DD61728481E00D7468E /* InfoPlist.strings in Resources */,
+				90D70DDC1728481E00D7468E /* Credits.rtf in Resources */,
+				90D70DE21728481E00D7468E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90D70DC41728481E00D7468E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D70DD81728481E00D7468E /* main.m in Sources */,
+				90D70DDF1728481E00D7468E /* MSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		90D70DD41728481E00D7468E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90D70DD51728481E00D7468E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		90D70DDA1728481E00D7468E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90D70DDB1728481E00D7468E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		90D70DE01728481E00D7468E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90D70DE11728481E00D7468E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90D70DE31728481E00D7468E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		90D70DE41728481E00D7468E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		90D70DE61728481E00D7468E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HackKRKApril/HackKRKApril-Prefix.pch";
+				INFOPLIST_FILE = "HackKRKApril/HackKRKApril-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		90D70DE71728481E00D7468E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HackKRKApril/HackKRKApril-Prefix.pch";
+				INFOPLIST_FILE = "HackKRKApril/HackKRKApril-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90D70DC31728481E00D7468E /* Build configuration list for PBXProject "HackKRKApril" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D70DE31728481E00D7468E /* Debug */,
+				90D70DE41728481E00D7468E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90D70DE51728481E00D7468E /* Build configuration list for PBXNativeTarget "HackKRKApril" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D70DE61728481E00D7468E /* Debug */,
+				90D70DE71728481E00D7468E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90D70DC01728481E00D7468E /* Project object */;
+}
