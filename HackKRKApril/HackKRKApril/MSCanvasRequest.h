@@ -21,5 +21,7 @@
 @property (nonatomic, assign) id <MSCanvasRequestDelegate>delegate;
 
 - (void)getNewChallenge;
+- (void)postChallengeWithImage:(NSImage*)image
+                   andServerId:(int)serverId;
 
 @end

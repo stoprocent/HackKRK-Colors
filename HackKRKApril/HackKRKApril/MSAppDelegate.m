@@ -12,6 +12,8 @@
 
 @interface MSAppDelegate () <MSCanvasRequestDelegate>
 
+@property (nonatomic, strong) MSCanvasRequest *request;
+
 @end
 
 @implementation MSAppDelegate
@@ -19,11 +21,11 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    MSCanvasRequest *request = [[MSCanvasRequest alloc] init];
+    self.request = [[MSCanvasRequest alloc] init];
     
-    request.delegate = self;
+    self.request.delegate = self;
     
-    [request getNewChallenge];
+    [self.request getNewChallenge];
 }
 
 - (void)gotNewChallengeWithColor:(NSColor *)color
@@ -34,9 +36,13 @@
     
     BaseLogoView *baseLogoView = [[BaseLogoView alloc] initWithFrame:CGRectMake(0, 0, 64, 64)
                                                                color:color];
+    
     [self.window.contentView addSubview:baseLogoView];
     
     self.window.backgroundColor = [NSColor clearColor];
+    
+    [self.request postChallengeWithImage: [NSImage imageNamed:@""]
+                             andServerId: serverId];
 }
 
 @end
