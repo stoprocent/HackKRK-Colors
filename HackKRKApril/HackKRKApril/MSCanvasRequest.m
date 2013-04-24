@@ -63,15 +63,13 @@ static NSString *kApiBaseUrl    = @"http://canvas.hackkrk.com/api/";
 {
 
     NSData *imageData = [self PNGRepresentationOfImage:image];
-    NSString *imageString = [[NSString alloc] initWithBytes: [imageData bytes]
-                                                     length: [imageData length]
-                                                   encoding: NSUTF8StringEncoding];
-    
+    NSString *imageString = [imageData base64EncodedString];
+
     AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL: [NSURL URLWithString: kApiBaseUrl]];
     
     NSMutableURLRequest *request = [httpClient requestWithMethod: @"POST"
                                                             path: [NSString stringWithFormat:@"challenge/%d", serverId]
-                                                      parameters: @{ kApiTokenKey: kApiToken, kApiImageKey: [imageString base64EncodedString]}];
+                                                      parameters: @{ kApiTokenKey: kApiToken, kApiImageKey: imageString}];
     
     AFJSONRequestOperation *operation = [[AFJSONRequestOperation alloc] initWithRequest:request];
     

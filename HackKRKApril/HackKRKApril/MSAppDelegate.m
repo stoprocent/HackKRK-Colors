@@ -41,7 +41,7 @@
     
     self.window.backgroundColor = [NSColor clearColor];
     
-    [self.request postChallengeWithImage: [NSImage imageNamed:@""]
+    [self.request postChallengeWithImage: [baseLogoView imageRepresentation]
                              andServerId: serverId];
 }
 
